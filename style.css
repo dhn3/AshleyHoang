@@ -1,0 +1,16 @@
+.title {
+    background-image:
+    linear-gradient(
+      to top right, 
+      white,#FFFAF0,#FFE4E1,#FFB6C1
+    );
+    color: blue;
+  }
+
+body {
+    background-image:
+    linear-gradient(
+      to bottom left, 
+      white,#FFFAF0,#FFE4E1
+    );
+  }

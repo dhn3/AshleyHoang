@@ -1,138 +1,139 @@
-<!DOCTYPE html>
-<html>
-<title>Ashley Hoang</title>
-<head>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h2{font-family: "Snell Roundhand", cursive}
-h1,a{font-family: "Trattatello", fantasy}
-h3{font-family: "Jazz LET", fantasy}
-h4,h6,a{font-family: "Apple Chancery", cursive}
-body, html {height: 100%}
-p {line-height: 2}
-.bgimg{
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-.bgimg2 {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-.bgimg3 {
-  min-height: 10%;
-  background-position: center;
-  background-size: cover;
-}
-.bgimg, .bgimg3 {background-image: url("PinkBackground.png")}
-.bgimg2 {background-image: url("FlowerBackground.png")}
-</style>
-<body>
+  <!DOCTYPE html>
+  <html>
+  <title>Ashley Hoang</title>
+  <head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+  body,h2{font-family: "Snell Roundhand", cursive}
+  h1,a{font-family: "Trattatello", fantasy}
+  h3{font-family: "Jazz LET", fantasy}
+  h4,h6,a{font-family: "Apple Chancery", cursive}
+  body, html {height: 100%}
+  p {line-height: 2}
+  .bgimg{
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  .bgimg3 {
+    min-height: 10%;
+    background-position: center;
+    background-size: cover;
+  }
+  .bgimg, .bgimg3 {background-image: url("PinkBackground.png")}
+  .bgimg2 {background-image: url("FlowerBackground.png")}
+  </style>
+  <body>
 
-<!-- Navbar (sticky bottom) -->
-<div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:20%" class="w3-bar-item w3-button w3-black">Home</a>
-    <a href="#us" style="width:20%" class="w3-bar-item w3-button w3-black">Baby Ashley</a>
-    <a href="#babyshower" style="width:20%" class="w3-bar-item w3-button w3-black">Baby Shower</a>
-    <a href="#Covid19Measures" style="width:20%" class="w3-bar-item w3-button w3-black">Covid-19 Measures</a>
-    <a href="#registry" style="width:20%" class="w3-bar-item w3-button w3-hover-black w3-black">Baby Registry & RSVP</a>
+  <!-- Navbar (sticky bottom) -->
+  <div class="w3-bottom w3-hide-small">
+    <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+      <a href="#home" style="width:20%" class="w3-bar-item w3-button w3-black">Home</a>
+      <a href="#us" style="width:20%" class="w3-bar-item w3-button w3-black">Baby Ashley</a>
+      <a href="#babyshower" style="width:20%" class="w3-bar-item w3-button w3-black">Baby Shower</a>
+      <a href="#Covid19Measures" style="width:20%" class="w3-bar-item w3-button w3-black">Covid-19 Measures</a>
+      <a href="#registry" style="width:20%" class="w3-bar-item w3-button w3-hover-black w3-black">Baby Registry & RSVP</a>
+    </div>
   </div>
-</div>
-  
-  
-<div class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-text-white w3-center">
-    <h2>Please join us for a</h2>
-    <h1 class="w3-jumbo">BABY SHOWER</h1>
-    <h2><b>Honoring</b></h2>
-    <br>
-    <h3><b>DUYEN NGUYEN</b></h3>
-    <br>
-    <h3><b>06.27.2021</b></h2>
+    
+    
+  <div class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-text-white w3-center">
+      <h2>Please join us for a</h2>
+      <h1 class="w3-jumbo">BABY SHOWER</h1>
+      <h2><b>Honoring</b></h2>
+      <br>
+      <h3><b>DUYEN NGUYEN</b></h3>
+      <br>
+      <h3><b>06.27.2021</b></h2>
+    </div>
   </div>
-</div>
 
-<!-- About / Ashley Hoang -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
-  <div class="w3-content">
-    <h1 class="w3-center w3-text-grey"><b>Baby Ashley</b></h1>
-    <img class="w3-round w3-grayscale-min" src="Ashley.png" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
-    <h4>
-      <i></i>
-    </h4><br>
-    <p class="w3-center"><a href="#babyshower" class="w3-button w3-black w3-round w3-padding-large w3-large">Baby Shower Details</a></p>
+  <!-- About / Ashley Hoang -->
+  <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+    <div class="w3-content">
+      <h1 class="w3-center w3-text-grey"><b>Baby Ashley</b></h1>
+      <img class="w3-round w3-grayscale-min" src="Ashley.png" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
+      <h4>
+        <i></i>
+      </h4><br>
+      <p class="w3-center"><a href="#babyshower" class="w3-button w3-black w3-round w3-padding-large w3-large">Baby Shower Details</a></p>
+      <p class="w3-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSct6RgEQHQk5ylHcuiEvbosuBHcoGCalTdd2deX2A243SLevw/viewform?usp=sf_link" target ="popup" class="w3-button w3-black w3-round w3-padding-large w3-large">RSVP</a></p>
+    </div>
   </div>
-</div>
 
-<!-- Background photo -->
-<div class="w3-display-container bgimg2">
-  <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">You Are Invited</h1><br>
-    <h2>Of course...</h2>
+  <!-- Background photo -->
+  <div class="w3-display-container bgimg2">
+    <div class="w3-display-middle w3-text-white w3-center">
+      <h1 class="w3-jumbo">You Are Invited</h1><br>
+      <h2>Of course...</h2>
+    </div>
   </div>
-</div>
 
-<!-- babyshower information -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="babyshower">
-  <div class="w3-content">
-    <h1 class="w3-text-grey"><b>THE BABY SHOWER</b></h1>
-    <div class="w3-row">
-      <div class="w3-half">
-        <h2>When</h2>
-        <h6>Sunday June 27, 2021 - 5:00 pm</h6>
-      </div>
-      <div class="w3-half">
-        <h2>Where</h2>
-        <h6>23 Glaser Ave, Raritan, NJ 08869</h6>
+  <!-- babyshower information -->
+  <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="babyshower">
+    <div class="w3-content">
+      <h1 class="w3-text-grey"><b>THE BABY SHOWER</b></h1>
+      <div class="w3-row">
+        <div class="w3-half">
+          <h2>When</h2>
+          <h6>Sunday June 27, 2021 - 5:00 pm</h6>
+        </div>
+        <div class="w3-half">
+          <h2>Where</h2>
+          <h6>23 Glaser Ave, Raritan, NJ 08869</h6>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Covid-19 Measures -->
-<div class="w3-container w3-padding-64 bgimg3 w3-grayscale-min w3-center w3-wide" id="Covid19Measures">
-  <h6>For the safety of</h6>
-  <h6>the mommy-to-be and others</h6>
-  <br>
-  <h2>Please wear your mask</h2>
-  <h2>during</h2>
-  <br>
-  <h1>Duyen's Baby Shower</h1>
-  <br>
-  <br>
-  <img src="Covid19Measures.png" alt="Covid-19 Measures" style="width:auto; max-width: 100%; height: auto;">
-  <br>
-  <br>
-  <br>
-  <h6>Thank you and we love you!</h6>
-</div>
+  <!-- Covid-19 Measures -->
+  <div class="w3-container w3-padding-64 bgimg3 w3-grayscale-min w3-center w3-wide" id="Covid19Measures">
+    <h6>For the safety of</h6>
+    <h6>the mommy-to-be and others</h6>
+    <br>
+    <h2>Please wear your mask</h2>
+    <h2>during</h2>
+    <br>
+    <h1>Duyen's Baby Shower</h1>
+    <br>
+    <br>
+    <img src="Covid19Measures.png" alt="Covid-19 Measures" style="width:auto; max-width: 100%; height: auto;">
+    <br>
+    <br>
+    <br>
+    <h6>Thank you and we love you!</h6>
+  </div>
 
-<!-- Registry section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center w3-wide" id="registry">
-  <h1>Baby Registry</h1>
-  <p class="w3-large"><a href="https://www.amazon.com/baby-reg/duyen-nguyen-july-2021-perthamboy/1X93NPRDK2EFC" target="_blank">Amazon</a></p>
-</div>
+  <!-- Registry section -->
+  <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center w3-wide" id="registry">
+    <h1>Baby Registry</h1>
+    <p class="w3-large"><a href="https://www.amazon.com/baby-reg/duyen-nguyen-july-2021-perthamboy/1X93NPRDK2EFC" target="_blank">Amazon</a></p>
+  </div>
 
-<!-- RSVP section -->
-<div class="w3-container w3-padding-64 bgimg3 w3-grayscale-min w3-center w3-wide" id="rsvp">
-  <h1>HOPE YOU CAN MAKE IT!</h1>
+  <!-- RSVP section -->
+  <div class="w3-container w3-padding-64 bgimg3 w3-grayscale-min w3-center w3-wide" id="rsvp">
+    <h1>HOPE YOU CAN MAKE IT!</h1>
 
-  <h6>Please RSVP to Truc Nguyen at 732-925-7222</h6>
-  <h6>OR</h6>
-  <h6>RSVP <a href="https://docs.google.com/forms/d/e/1FAIpQLSct6RgEQHQk5ylHcuiEvbosuBHcoGCalTdd2deX2A243SLevw/viewform?usp=sf_link" target = "popup")>HERE</a></h6>
-  <h6>by June 20th, 2021</h6>
-</div>
+    <h6>Please RSVP to Truc Nguyen at 732-925-7222</h6>
+    <h6>OR</h6>
+    <h6>RSVP <a href="https://docs.google.com/forms/d/e/1FAIpQLSct6RgEQHQk5ylHcuiEvbosuBHcoGCalTdd2deX2A243SLevw/viewform?usp=sf_link" target = "popup")>HERE</a></h6>
+    <h6>by June 20th, 2021</h6>
+  </div>
 
 
-</body>
+  </body>
 
-</html>
+  </html>
